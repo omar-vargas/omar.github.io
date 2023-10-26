@@ -1,0 +1,692 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><title>Tenable.io Report</title><style type="text/css" media="all">
+    UL.ulist {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px;};
+    LI.list  {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc;}
+    LI.list0 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#006CB9;}
+    LI.list1 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#966807;}
+    LI.list2 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#9F4909;}
+    LI.list3 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#C2212E;}
+    LI.list4 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#91243E;}
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-text-size-adjust: none;
+    }
+    
+    html, body {
+        font-family: helvetica, arial, sans-serif;
+        width: 100%;
+        color: #263645;
+        font-size: 12px;
+        background: #efefef;
+    }
+
+    a, a:visited, a:active {
+        color: #004a97;
+    }
+
+    a:hover {
+        color: #00253d;
+    }
+
+    .container_16 {
+        margin: 0 auto;
+        padding: 0 14px 14px 14px;
+        background: #fff;
+        border-top: #425363 solid 7px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        margin-bottom: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    #reportContent {
+        width: 100%;
+    }
+
+    h1.classtitle {
+        padding: 15px 0 10px 0;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 0 15px 0;
+    }
+
+    h2.classtitle {
+        color: #00a5b5;
+        font-weight: normal;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2.date {
+        font-size: 14px;
+        color: #768591;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    
+    .reportinfo {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        padding: 0 0 15px 0;
+        margin: 0 0 5px 0;
+        font-weight: normal;
+        border-bottom: 1px dotted #ccc;
+    }
+    
+    .reportpadding {
+        padding: 15px 0 0 0 !important;
+    }
+    
+    .classtoc {
+        display: block;
+        font-size: 18px;
+        color: #777779;
+        padding: 15px 0;
+        margin: 15px 0 0 0;
+    }
+
+    h1.classchapter {
+        background: #425363;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 6px 10px;
+        margin: 10px 0 0 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+    h2.classsection {
+        display: block;
+        background: #425363;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 30px 0 0 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+    h2.classh1  {
+        display: block;
+        background: #efefef;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .classtext {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    div#reportContent div span.classtext {
+        padding: 6px 10px;
+        display: inline-block;
+    }
+
+    h2.classsubsection {
+        background: #768591;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    
+    .classheader h1 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    .reportinfo b {
+        font-weight: bold;
+    }
+    
+    h3.classtitle  {
+        color: #69737b;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    .classsection_sub tr, td {
+        color: #053958;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    
+    td {
+        padding: 6px 10px;
+    }
+    
+    h2.classsection, h2.classsection0, h2.classsection1, h2.classsection2, h2.classsection3, h2.classsection4 {
+        background: #053958;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 6px 10px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    
+    .classcell0, .classcell1, .classcell2, .classcell3, .classcell4 {
+        vertical-align: bottom;
+    }
+    
+    .classcell4, h2.classsection4 {
+        background-color: #91243E;
+    }
+
+    .classcell3, h2.classsection3 {
+        background-color: #DD4B50;
+    }
+
+    .classcell2, h2.classsection2 {
+        background-color: #F18C43;
+    }
+
+    .classcell1, h2.classsection1 {
+        background-color: #F8C851;
+    }
+
+    .classcell0, h2.classsection0 {
+        background-color: #2C87D6;
+    }
+
+    
+    #copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        color: #A9A8A9;
+        padding: 6px 0 20px 0;
+    }
+    
+    #copyright a, #copyright a:visited, #copyright a:active {
+        color: #A9A8A9;
+    }
+    
+    div.icon {
+        display: none;
+    }
+    
+    .nopadding {
+        padding: 0 !important;
+    }
+    
+    body.email h2.classh1 {
+        display: block;
+        margin: 20px 0 0 0;
+        background: #425363;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 6px 10px;
+        border-radius: 4px 4px 0 0;
+    }
+    
+    body.email div#reportContent div span.classtext {
+        padding: 0;
+        display: inline;
+    }
+    
+    body.email h2.tips {
+        background: #004a97 !important;
+    }
+    
+    body.email h2.errors {
+        background: #c00 !important;
+    }
+    
+    body.email h2.classsection {
+        display: none;
+    }
+    
+    .classtoc1 a {
+        font-size: 16px;
+    }
+                
+    .classtoc2 a {
+        font-size: 13px;
+        padding: 0 20px;
+    }
+    
+    h2.classh2  {
+        background: #f8f8f8;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    h2 span.sub {
+        margin-left:2px;
+        margin-right:2px;
+    }
+
+    h2 span.text {
+        font-size:10px;
+    }
+
+    h2 span.label {
+        font-size:12px;
+        margin-left:8px;
+    }   
+    
+    .classpre {
+        display: block;
+        font-size: 13px;
+        font-family: Courier New, Courier, monospace;
+        padding: 10px;
+        color: #000;
+    }
+    
+    .classh1_grey h2 {
+        background: #eaeaea;
+        color:#053958;
+        font-size: 13px;
+        padding: 0 10px;
+        margin-top:0px;
+        margin-bottom:2px;
+    }
+
+    .summaryTable {
+        border: none;
+        border-collapse: collapse;
+    }
+
+    .summaryTable tr:first-child {
+        background-color: #efefef !important;
+    }
+
+    .multiRowSummaryTable td {
+        border-right: 1px solid #efefef;
+    }
+
+    .multiRowSummaryTable td:last-child {
+        border-right: none;
+    }
+
+    .multiRowSummaryTable tr:nth-child(odd) {
+        background-color: #f8f8f8;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        html, body {
+            display: block;
+            min-width: 480px;
+            background: #fff;
+        }
+        
+        table {
+            table-layout: auto !important;
+        }
+        
+        table td {
+            word-wrap: break-word;
+        }
+        
+        table.container_16 {
+            width: 100%;
+            padding: 0 4% 20px 4%;
+            background: #fff;
+            border-top: #425363 solid 7px;
+            box-shadow: none !important;
+            margin-bottom: 20px;
+            border-radius: 0;
+        }
+        
+        #copyright {
+            display: block;
+            width: 90%;
+            text-align: center;
+            font-size: 10px;
+            color: #A9A8A9;
+            padding: 5px 0 20px 0;
+            border-top: 1px dotted #ccc;
+            margin: 0 auto;
+            line-height: 16px;
+        }
+        
+        .classtitle img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+</style><script type="text/javascript">
+        function toggle(divId) {
+            var divObj = document.getElementById(divId);
+            if (divObj) {
+                var displayType = divObj.style.display;
+                if (displayType == "" || displayType == "block") {
+                    divObj.style.display = "none";
+                } else {
+                    divObj.style.display = "block";
+                }
+            }
+        }
+
+        function ceall(flag) {
+            var divs = document.getElementsByTagName("div");
+            var i = 0;
+            for (i = 0; i < divs.length; i++) {
+                if (divs[i].getAttribute("id") != null && divs[i].getAttribute("id").match('btag-')) {
+                    if (flag == 0) {
+                        divs[i].style.display = "none";
+                    } else {
+                        divs[i].style.display = "block";
+                    }
+                }
+            }
+        }
+        </script></head><body class=""><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="center" valign="top" class="nopadding" style="vertical-align: top"><table cellpadding="0" cellspacing="0" border="0" width="80%" bgcolor="#FFFFFF" class="container_16"><tr><td><table xmlns="" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr><td class="nopadding"><h1 class="classtitle"><img src="data:image/gif;base64,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" width="247" height="68" border="0" alt="Tenable.io Report" style="display: block;"></h1></td></tr>
+<tr><td class="nopadding"><h2 class="classtitle">Tenable.io Report</h2></td></tr>
+<tr><td class="nopadding"><h2 class="date">Mon, 23 Oct 2023 16:08:00 UTC</h2></td></tr>
+<tr><td class="reportpadding"><div class="reportinfo"></div></td></tr>
+</table>
+<div id="reportContent"><span xmlns="" class="classtoc">Table Of Contents</span><table xmlns="">
+<tr><td><span class="classtoc1"><a href="#idm6942194560">Vulnerabilities By Plugin</a></span></td></tr>
+<tr><td><table>
+<tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding classcell2"></td></tr></table></td>
+<td width="95%"><a href="#idm6942195072">183295 (1) - Oracle Java SE Multiple Vulnerabilities (October 2023 CPU)</a></td>
+</tr>
+<tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding classcell2"></td></tr></table></td>
+<td width="95%"><a href="#idm4182524672">57582 (2) - SSL Self-Signed Certificate</a></td>
+</tr>
+<tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding classcell2"></td></tr></table></td>
+<td width="95%"><a href="#idp2562021120">51192 (3) - SSL Certificate Cannot Be Trusted</a></td>
+</tr>
+<tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding classcell1"></td></tr></table></td>
+<td width="95%"><a href="#idp6624896">153953 (1) - SSH Weak Key Exchange Algorithms Enabled</a></td>
+</tr>
+<tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding classcell1"></td></tr></table></td>
+<td width="95%"><a href="#idm11107772544">70658 (1) - SSH Server CBC Mode Ciphers Enabled</a></td>
+</tr>
+</table></td></tr>
+<tr><td><span class="classtoc1"><a href="#idp68864">Assets Summary (Executive)</a></span></td></tr>
+<tr><td><table><tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class="nopadding "></td></tr></table></td>
+<td width="95%"><a href="#idp69120">dng.local</a></td>
+</tr></table></td></tr>
+</table>
+<h1 xmlns="" class="classchapter" id="idm6942194560">Vulnerabilities By Plugin</h1>
+<h2 xmlns="" class="classsection2" id="idm6942195072">183295 (1) - Oracle Java SE Multiple Vulnerabilities (October 2023 CPU)</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Synopsis</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The remote host is affected by multiple vulnerabilities.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Description</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The version of Oracle (formerly Sun) Java SE or Java for Business installed on the remote host is affected by multiple vulnerabilities as referenced in the October 2023 CPU advisory:<br> <br>  - Vulnerability in Oracle Java SE (component: CORBA). Supported versions that are affected are Oracle Java     SE: 8u381 and 8u381-perf. Easily exploitable vulnerability allows unauthenticated attacker with network     access via CORBA to compromise Oracle Java SE. Successful attacks of this vulnerability can result in     unauthorized update, insert or delete access to some of Oracle Java SE accessible data. (CVE-2023-22067)<br> <br>  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: JSSE).     Supported versions that are affected are Oracle Java SE: 8u381, 8u381-perf, 11.0.20, 17.0.8, 20.0.2;     Oracle GraalVM for JDK: 17.0.8 and 20.0.2. Easily exploitable vulnerability allows unauthenticated     attacker with network access via HTTPS to compromise Oracle Java SE, Oracle GraalVM for JDK. Successful     attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service     (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK. (CVE-2023-22081)<br> <br>  - CVE-2023-22025	Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition, Oracle GraalVM     for JDK product of Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle     Java SE: 8u381-perf, 17.0.8, 20.0.2; Oracle GraalVM for JDK: 17.0.8 and 20.0.2. Difficult to exploit     vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise     Oracle Java SE, Oracle GraalVM Enterprise Edition, Oracle GraalVM for JDK. Successful attacks of this     vulnerability can result in unauthorized update, insert or delete access to some of Oracle Java SE,     Oracle GraalVM Enterprise Edition, Oracle GraalVM for JDK accessible data. (CVE-2023-22025)<br> <br>Note that Nessus has not tested for this issue but has instead relied only on the application's self-reported version number.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->See Also</h2>
+<table xmlns="" class="" width="100%">
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="https://www.oracle.com/docs/tech/security-alerts/cpuoct2023cvrf.xml" target="_blank">https://www.oracle.com/docs/tech/security-alerts/cpuoct2023cvrf.xml</a>
+</td></tr>
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="https://www.oracle.com/security-alerts/cpuoct2023.html#AppendixJAVA" target="_blank">https://www.oracle.com/security-alerts/cpuoct2023.html#AppendixJAVA</a>
+</td></tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Solution</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Apply the appropriate patch according to the October 2023 Oracle Critical Patch Update advisory.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Risk Factor</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Medium</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Vulnerability Priority Rating (VPR)</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">2.9</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS v3.0 Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">5.3 (AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS v3.0 Temporal Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">4.6 (E:U/RL:O/RC:C)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">5.0 (AV:N/AC:L/Au:N/C:N/I:P/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Temporal Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">3.7 (E:U/RL:OF/RC:C)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->References</h2>
+<table xmlns="" class="" width="100%">
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">CVE</span></td>
+<td width="70%" valign="top" align="left" class="classcell"> <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22081" target="_blank">CVE-2023-22081</a>
+</td>
+</tr>
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">CVE</span></td>
+<td width="70%" valign="top" align="left" class="classcell"> <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22067" target="_blank">CVE-2023-22067</a>
+</td>
+</tr>
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">CVE</span></td>
+<td width="70%" valign="top" align="left" class="classcell"> <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22025" target="_blank">CVE-2023-22025</a>
+</td>
+</tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Exploitable with</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Metasploit, CANVAS, Core Impact</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Plugin Information: </h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Publication date: 2023/10/18, Modification date: 2023/10/19</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Assets</h2>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/0) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>  Path              : /usr/lib/jvm/jdk-17-oracle-x64/<br>  Installed version : 17.0.8.9.211 / build 17.0.8<br>  Fixed version     : Upgrade to version 17.0.9 or greater<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classsection2" id="idm4182524672">57582 (2) - SSL Self-Signed Certificate</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Synopsis</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The SSL certificate chain for this service ends in an unrecognized self-signed certificate.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Description</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The X.509 certificate chain for this service is not signed by a recognized certificate authority.  If the remote host is a public host in production, this nullifies the use of SSL as anyone could establish a man-in-the-middle attack against the remote host. <br> <br>Note that this plugin does not check for certificate chains that end in a certificate that is not self-signed, but is signed by an unrecognized certificate authority.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Solution</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Purchase or generate a proper SSL certificate for this service.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Risk Factor</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Medium</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS v3.0 Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">6.5 (AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">6.4 (AV:N/AC:L/Au:N/C:P/I:P/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Exploitable with</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Metasploit, CANVAS, Core Impact</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Plugin Information: </h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Publication date: 2012/01/17, Modification date: 2022/06/14</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Assets</h2>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/8443) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following certificate was found at the top of the certificate<br>chain sent by the remote host, but is self-signed and was not<br>found in the list of known certificate authorities :<br> <br>|-Subject : CN=localhost<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/443) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following certificate was found at the top of the certificate<br>chain sent by the remote host, but is self-signed and was not<br>found in the list of known certificate authorities :<br> <br>|-Subject : CN=localhost<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classsection2" id="idp2562021120">51192 (3) - SSL Certificate Cannot Be Trusted</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Synopsis</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The SSL certificate for this service cannot be trusted.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Description</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The server's X.509 certificate cannot be trusted. This situation can occur in three different ways, in which the chain of trust can be broken, as stated below :<br> <br>  - First, the top of the certificate chain sent by the     server might not be descended from a known public     certificate authority. This can occur either when the     top of the chain is an unrecognized, self-signed     certificate, or when intermediate certificates are     missing that would connect the top of the certificate     chain to a known public certificate authority.<br> <br>  - Second, the certificate chain may contain a certificate     that is not valid at the time of the scan. This can     occur either when the scan occurs before one of the     certificate's 'notBefore' dates, or after one of the     certificate's 'notAfter' dates.<br> <br>  - Third, the certificate chain may contain a signature     that either didn't match the certificate's information     or could not be verified. Bad signatures can be fixed by     getting the certificate with the bad signature to be     re-signed by its issuer. Signatures that could not be     verified are the result of the certificate's issuer     using a signing algorithm that Nessus either does not     support or does not recognize.<br> <br>If the remote host is a public host in production, any break in the chain makes it more difficult for users to verify the authenticity and identity of the web server. This could make it easier to carry out man-in-the-middle attacks against the remote host.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->See Also</h2>
+<table xmlns="" class="" width="100%">
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="https://www.itu.int/rec/T-REC-X.509/en" target="_blank">https://www.itu.int/rec/T-REC-X.509/en</a>
+</td></tr>
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="https://en.wikipedia.org/wiki/X.509" target="_blank">https://en.wikipedia.org/wiki/X.509</a>
+</td></tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Solution</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Purchase or generate a proper SSL certificate for this service.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Risk Factor</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Medium</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS v3.0 Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">6.5 (AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">6.4 (AV:N/AC:L/Au:N/C:P/I:P/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Exploitable with</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Metasploit, CANVAS, Core Impact</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Plugin Information: </h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Publication date: 2010/12/15, Modification date: 2020/04/27</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Assets</h2>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/443) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following certificate was at the top of the certificate<br>chain sent by the remote host, but it is signed by an unknown<br>certificate authority :<br> <br>|-Subject : CN=localhost<br>|-Issuer  : CN=localhost<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/8834) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following certificate was at the top of the certificate<br>chain sent by the remote host, but it is signed by an unknown<br>certificate authority :<br> <br>|-Subject : O=Nessus Users United/OU=Nessus Server/L=New York/C=US/ST=NY/CN=dng.local<br>|-Issuer  : O=Nessus Users United/OU=Nessus Certification Authority/L=New York/C=US/ST=NY/CN=Nessus Certification Authority<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classh2" style="color: #9F4909">dng.local (TCP/8443) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following certificate was at the top of the certificate<br>chain sent by the remote host, but it is signed by an unknown<br>certificate authority :<br> <br>|-Subject : CN=localhost<br>|-Issuer  : CN=localhost<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classsection1" id="idp6624896">153953 (1) - SSH Weak Key Exchange Algorithms Enabled</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Synopsis</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The remote SSH server is configured to allow weak key exchange algorithms.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Description</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The remote SSH server is configured to allow key exchange algorithms which are considered weak.<br> <br>This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH) draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be enabled. This includes:<br> <br>  diffie-hellman-group-exchange-sha1<br> <br>  diffie-hellman-group1-sha1<br> <br>  gss-gex-sha1-*<br> <br>  gss-group1-sha1-*<br> <br>  gss-group14-sha1-*<br> <br>  rsa1024-sha1<br> <br>Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software versions.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->See Also</h2>
+<table xmlns="" class="" width="100%">
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="http://www.nessus.org/u?b02d91cd" target="_blank">http://www.nessus.org/u?b02d91cd</a>
+</td></tr>
+<tr><td width="100%" valign="top" align="left" class="classcell"> <a href="https://datatracker.ietf.org/doc/html/rfc8732" target="_blank">https://datatracker.ietf.org/doc/html/rfc8732</a>
+</td></tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Solution</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Contact the vendor or consult product documentation to disable the weak algorithms.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Risk Factor</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Low</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS v3.0 Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">3.7 (AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">2.6 (AV:N/AC:H/Au:N/C:P/I:N/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Exploitable with</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Metasploit, CANVAS, Core Impact</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Plugin Information: </h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Publication date: 2021/10/13, Modification date: 2021/10/13</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Assets</h2>
+<h2 xmlns="" class="classh2" style="color: #966807">dng.local (TCP/22) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following weak key exchange algorithms are enabled : <br> <br>  diffie-hellman-group-exchange-sha1<br>  diffie-hellman-group1-sha1<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h2 xmlns="" class="classsection1" id="idm11107772544">70658 (1) - SSH Server CBC Mode Ciphers Enabled</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Synopsis</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The SSH server is configured to use Cipher Block Chaining.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Description</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">The SSH server is configured to support Cipher Block Chaining (CBC) encryption.  This may allow an attacker to recover the plaintext message from the ciphertext. <br> <br>Note that this plugin only checks for the options of the SSH server and does not check for vulnerable software versions.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Solution</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Contact the vendor or consult product documentation to disable CBC mode cipher encryption, and enable CTR or GCM cipher mode encryption.</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Risk Factor</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Low</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Vulnerability Priority Rating (VPR)</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">6.5</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Base Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">2.6 (AV:N/AC:H/Au:N/C:P/I:N/A:N)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->CVSS Temporal Score</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">1.9 (E:U/RL:OF/RC:C)</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->References</h2>
+<table xmlns="" class="" width="100%">
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">CVE</span></td>
+<td width="70%" valign="top" align="left" class="classcell"> <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5161" target="_blank">CVE-2008-5161</a>
+</td>
+</tr>
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">BID</span></td>
+<td width="70%" valign="top" align="left" class="classcell"> <a href="http://www.securityfocus.com/bid/32319" target="_blank">32319</a>
+</td>
+</tr>
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">XREF</span></td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">CERT-958563</span></td>
+</tr>
+<tr>
+<td width="30%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">XREF</span></td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">CWE-200</span></td>
+</tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Exploitable with</h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Metasploit, CANVAS, Core Impact</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Plugin Information: </h2>
+<span xmlns="" class="classtext" style="color: #263645; font-weight: normal;">Publication date: 2013/10/28, Modification date: 2018/07/30</span><h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Assets</h2>
+<h2 xmlns="" class="classh2" style="color: #966807">dng.local (TCP/22) Vulnerability State: Active</h2>
+<div xmlns="" style="box-sizing: border-box; width: 100%; background: #eee; font-family: monospace; padding: 20px; margin: 5px 0 20px 0;"> <br>The following client-to-server Cipher Block Chaining (CBC) algorithms<br>are supported : <br> <br>  3des-cbc<br>  aes128-cbc<br>  aes192-cbc<br>  aes256-cbc<br>  blowfish-cbc<br>  cast128-cbc<br> <br>The following server-to-client Cipher Block Chaining (CBC) algorithms<br>are supported : <br> <br>  3des-cbc<br>  aes128-cbc<br>  aes192-cbc<br>  aes256-cbc<br>  blowfish-cbc<br>  cast128-cbc<div class="clear"></div>
+</div>
+<div xmlns="" class="clear"></div>
+<h1 xmlns="" class="classchapter" id="idp68864">Assets Summary (Executive)</h1>
+<h2 xmlns="" class="classsection" id="idp69120">dng.local</h2>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Summary</h2>
+<table xmlns="" class="" width="100%">
+<tr>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Critical</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">High</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Medium</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Low</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Info</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Total</span></td>
+</tr>
+<tr>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #91243E; font-weight: bold !important;">0</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #C2212E; font-weight: bold !important;">0</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #9F4909; font-weight: bold !important;">3</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #966807; font-weight: bold !important;">2</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #006CB9; font-weight: bold !important;">0</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">5</span></td>
+</tr>
+</table>
+<h2 xmlns="" class="classh1 " style="vertical-align: middle;"><!--[if mso]><img src="cid:#" width="1" height="25" border="0" style="display: block; float: left;">  
+            <![endif]]]-->Details</h2>
+<table xmlns="" class="" width="100%">
+<tr>
+<td width="20%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Severity</span></td>
+<td width="15%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Plugin Id</span></td>
+<td width="65%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: bold !important;">Name</span></td>
+</tr>
+<tr>
+<td width="20%" valign="top" align="left" class="classcell2"><span class="classtext" style="color: #ffffff; font-weight: bold !important;">Medium</span></td>
+<td width="10%" valign="top" align="left" class="classcell"> <a href="http://www.tenable.com/plugins/index.php?view=single&amp;id=183295" target="_blank"> 183295</a>
+</td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">Oracle Java SE Multiple Vulnerabilities (October 2023 CPU)</span></td>
+</tr>
+<tr>
+<td width="20%" valign="top" align="left" class="classcell2"><span class="classtext" style="color: #ffffff; font-weight: bold !important;">Medium</span></td>
+<td width="10%" valign="top" align="left" class="classcell"> <a href="http://www.tenable.com/plugins/index.php?view=single&amp;id=57582" target="_blank"> 57582</a>
+</td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">SSL Self-Signed Certificate</span></td>
+</tr>
+<tr>
+<td width="20%" valign="top" align="left" class="classcell2"><span class="classtext" style="color: #ffffff; font-weight: bold !important;">Medium</span></td>
+<td width="10%" valign="top" align="left" class="classcell"> <a href="http://www.tenable.com/plugins/index.php?view=single&amp;id=51192" target="_blank"> 51192</a>
+</td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">SSL Certificate Cannot Be Trusted</span></td>
+</tr>
+<tr>
+<td width="20%" valign="top" align="left" class="classcell1"><span class="classtext" style="color: #ffffff; font-weight: bold !important;">Low</span></td>
+<td width="10%" valign="top" align="left" class="classcell"> <a href="http://www.tenable.com/plugins/index.php?view=single&amp;id=153953" target="_blank"> 153953</a>
+</td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">SSH Weak Key Exchange Algorithms Enabled</span></td>
+</tr>
+<tr>
+<td width="20%" valign="top" align="left" class="classcell1"><span class="classtext" style="color: #ffffff; font-weight: bold !important;">Low</span></td>
+<td width="10%" valign="top" align="left" class="classcell"> <a href="http://www.tenable.com/plugins/index.php?view=single&amp;id=70658" target="_blank"> 70658</a>
+</td>
+<td width="70%" valign="top" align="left" class="classcell"><span class="classtext" style="color: #263645; font-weight: normal;">SSH Server CBC Mode Ciphers Enabled</span></td>
+</tr>
+</table></div></td></tr></table></td></tr></table><div id="copyright">
+                This is a report from 
+                 <a xmlns="" href="https://cloud.tenable.com/" target="_blank">Tenable.io</a>.<br xmlns="">
+                Tenable.io is published by Tenable, Inc<br xmlns="">
+                6100 Merriweather Dr, Columbia, MD 21044<br xmlns="">
+                © 2023 Tenable, Inc. All rights reserved.
+            </div></body></html>
